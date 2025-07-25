@@ -1,7 +1,7 @@
 /*shared properties*/
 body{
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 .flex{
     display: flex;
@@ -19,7 +19,13 @@ body{
 .black{
     color:black;
 }
+.orange{
+    color:#E95A08;
+}
 /*nav-bar*/
+header{
+    margin-bottom: 120px;
+}
 .nav-bar{
     justify-content: space-between;
     align-items: center;
@@ -36,9 +42,51 @@ body{
 .gap{
     gap:5px;
 }
+/*hero section*/
+.hero{
+    margin-left:45px ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.hero-box-1{
+    margin-top: 45px;
+}
+.hero-title{
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+.hero-description{
+    
+    font-size: 22px;
+}
+.hero-img{
+    width: 100%;
+}
 /*responsive*/
 @media screen and (max-width:576px){
+    .nav{
+        padding: 5px;
+    }
     .hidden{
         display:none ;
     }
+    header{
+        margin-bottom: 28px;
+    }
+    .hero{
+        grid-template-columns: repeat(1,1fr);
+        grid-column-start: end;
+        
+    }
+    .hero-box{
+        grid-row: 1;
+    }
+    .hero-box-1{
+        grid-row: 2;
+
+    }
+    
 }
+
+

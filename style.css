@@ -1,0 +1,44 @@
+/*shared properties*/
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+
+}
+
+.bold{
+    font-weight: bold;
+    
+    
+}
+.blue{
+    color:#8987A1;
+}
+.black{
+    color:black;
+}
+/*nav-bar*/
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-box ul{
+    gap:48px;
+    list-style: none;
+    
+}
+.nav-box ul a{
+    text-decoration: none;
+
+}
+.gap{
+    gap:5px;
+}
+/*responsive*/
+@media screen and (max-width:576px){
+    .hidden{
+        display:none ;
+    }
+}

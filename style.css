@@ -22,6 +22,15 @@ body{
 .orange{
     color:#E95A08;
 }
+.btn{
+    background-color: #E95A08;
+    color: white;
+    font-weight: 700;
+    height: 36px;
+    width: 100%;
+    border: none;
+    
+}
 /*nav-bar*/
 header{
     margin-bottom: 120px;
@@ -63,8 +72,38 @@ header{
 .hero-img{
     width: 100%;
 }
+/*card-section*/
+.cards{
+    text-align: center;
+    margin-bottom: 200px;
+}
+.card-title{
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+.card-description,.box-title,.box-price{
+    font-size: 22px;
+}
+.card-description{
+    margin-left: 128px;
+    margin-right: 128px;
+}
+.box-price{
+    font-weight: bold;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+.box-img{
+    width: 100%;
+}
 /*responsive*/
 @media screen and (max-width:576px){
+    body{
+        margin: 10px auto;
+    }
     .nav{
         padding: 5px;
     }
@@ -86,6 +125,18 @@ header{
         grid-row: 2;
 
     }
+    .card{
+        
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .cards,.card-description{
+        margin-left: 16px;
+        margin-right: 16px;
+    
+   
+    }
+    
     
 }
 

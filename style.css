@@ -31,6 +31,7 @@ body{
     border: none;
     
 }
+
 /*nav-bar*/
 header{
     margin-bottom: 120px;
@@ -99,11 +100,57 @@ header{
 .box-img{
     width: 100%;
 }
+/*shop-secton*/
+.shops{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:60px;
+}
+.shop-img{
+    width: 100%;
+    
+}
+.shop-title{
+    font-size: 4rem;
+}
+.shop-list{
+    font-size: 22px;
+}
+.shop{
+    margin-bottom: 130px;
+}
+.badge{
+    height: 280px;
+    width: 280px;
+    background-image:url(assets/trusted-badge.png) ;
+    background-size: cover;
+    position: absolute;
+    top:1860px;
+    left:800px;
+    animation: rotation 3s ease-in-out 0s infinite ;
+
+} 
+@keyframes rotation {
+    
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg) ;
+        }
+    }
+    
+
+
+
+
+
+
+
+
 /*responsive*/
 @media screen and (max-width:576px){
-    body{
-        margin: 10px auto;
-    }
+    
     .nav{
         padding: 5px;
     }
@@ -135,6 +182,22 @@ header{
         margin-right: 16px;
     
    
+    }
+    .cards{
+        margin-bottom: 20px;
+    }
+    .shop{
+        margin: 17px;
+    }
+    .shops{
+        grid-template-columns: repeat(1,1fr);
+        gap:5px;
+    }
+    .shop-title{
+    font-size: 1.75rem;
+    }
+    .badge{
+        display: none;
     }
     
     

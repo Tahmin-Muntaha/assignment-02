@@ -18,6 +18,7 @@ body{
 }
 .blue{
     color:#8987A1;
+    font-size: 22px;
 }
 .black{
     color:black;
@@ -240,8 +241,24 @@ header{
     color:white;
     font-size: 50px;
 }
+/*footer-section*/
+.footer a{
+    text-decoration: none;
     
-
+}  
+.dir{
+    flex-direction: column;
+    gap:32px;
+}  
+.dir1{
+    gap:24px;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:110px;
+    margin:50px 100px 50px 100px;
+}
 
 
 
@@ -347,6 +364,15 @@ header{
     
     height:270px;
     
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:10px;
+    margin:50px 5px 50px 30px;
+}
+.dor,dir1{
+    gap:10px;
 }
 
     
